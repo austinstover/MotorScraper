@@ -165,9 +165,9 @@ def main():
             massMatch_kg = re.search(r'(weight|mass)\W*([\d\.]+)kg',motorPropStr)
             mass_kg = None #default
             if(massMatch_g): #A match found
-                mass_kg = int(massMatch_g[2])/1000
+                mass_kg = float(massMatch_g[2])/1000
             elif(massMatch_kg):
-                mass_kg = int(massMatch_kg[2])
+                mass_kg = float(massMatch_kg[2])
             else:
                 mass_kg = None
             
