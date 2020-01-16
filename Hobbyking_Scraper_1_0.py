@@ -27,7 +27,7 @@ def main():
     '''
     
     #Open chrome
-    driver = webdriver.Chrome('C:\Program Files (x86)\Google\chromedriver.exe')
+    driver = webdriver.Chrome('C:\Program Files (x86)\Google\chromedriver.exe') #CHANGE THIS LINE TO DESIRED WEBDRIVER AND LOCATION
     
     #Open up page with list of brushless motors
     driver.get(hobbykingUrl)
